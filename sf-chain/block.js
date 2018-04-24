@@ -12,6 +12,10 @@ toString() {
           Hash      : ${this.hash.substring(0, 10) }
           Data      : ${this.data}`;
   }
+
+  static genesis() {
+    return new this('Geneis Time Stamp', '----','f152',[]);
+  }
 }
 
 module.exports = Block;
