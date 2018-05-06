@@ -22,6 +22,11 @@ class P2pServer {
       socket.on('open', () => this.connectSocket(socket));
     });
   }
+
+  connectSocket(socket) {
+    this.sockets.push(socket);
+    console.log('Socket connected');
+  }
 }
 
 
