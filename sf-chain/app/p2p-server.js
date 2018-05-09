@@ -31,9 +31,20 @@ class P2pServer {
   }
 
   messageHandler(socket) {
-	socket.on('message', message => {
-    const data = JSON.parse(message);
-    console.log('data', data);
+    socket.on('message', message => {
+      const data = JSON.parse(message);
+      this.blockchain.replaceChain(data);
+    });
+}
+
+sendChain(socket) {
+	socket.send(JSON.stringify(this.blockchain.chain));
+}
+
+
+syncChains() {
+  this.sockets.forEach(socket => {
+    this.sockets.forEach(socket => this.sendChain(socket));
   });
 }
 }
