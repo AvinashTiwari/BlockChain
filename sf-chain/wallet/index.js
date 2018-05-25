@@ -21,7 +21,8 @@ class Wallet {
 }
 
 
-createTransaction(recipient, amount, transactionPool) {
+createTransaction(recipient , amount, transactionPool) {
+  console.log("recipient " + recipient + " amount " + amount + " transactionPool" + transactionPool);
   if (amount > this.balance) {
     console.log(`Amount: ${amount}, exceeds current balance: ${this.balance}`);
     return;
