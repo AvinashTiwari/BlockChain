@@ -8,7 +8,9 @@
 		"474ab288-29df-c394-f21d-e817b34c54d8",
 		"b8b567c7-5b53-d6f9-cc62-ebf49588c8fe",
 		"25910a99-154b-31c5-0b76-bcd2c5bcead6",
-		"84ce926b-c1e6-c953-fa2e-f24500595577"
+		"84ce926b-c1e6-c953-fa2e-f24500595577",
+		"0c5fc80b-b13f-5c8d-f7fe-9633bc68f4be",
+		"ad79220d-c193-0096-81cb-9855cbe6f434"
 	],
 	"folders": [],
 	"folders_order": [],
@@ -16,6 +18,29 @@
 	"owner": 0,
 	"public": false,
 	"requests": [
+		{
+			"id": "0c5fc80b-b13f-5c8d-f7fe-9633bc68f4be",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:3002/public-key",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "7e81d10d-cf08-0e05-3029-11a6ca92da5f",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:3002/public-key",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1527452448902,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
 		{
 			"id": "25910a99-154b-31c5-0b76-bcd2c5bcead6",
 			"headers": "Content-Type: application/json\n",
@@ -128,6 +153,27 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {}
+		},
+		{
+			"id": "ad79220d-c193-0096-81cb-9855cbe6f434",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:3001/mine-transactions",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1527453233370,
+			"name": "localhost:3001/transactions",
+			"description": "",
+			"collectionId": "7e81d10d-cf08-0e05-3029-11a6ca92da5f",
+			"responses": []
 		},
 		{
 			"id": "b8b567c7-5b53-d6f9-cc62-ebf49588c8fe",
