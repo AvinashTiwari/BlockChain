@@ -39,6 +39,12 @@ createTransaction(recipient , amount, transactionPool) {
   return transaction;
 }
 
+static blockchainWallet() {
+  const blockchainWallet = new this();
+  blockchainWallet.address = 'blockchanin-wallet';
+  return blockchainWallet;
+}
+
 }
 
 module.exports = Wallet;
