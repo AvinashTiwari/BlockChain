@@ -61,6 +61,37 @@ describe('Wallet', () => {
        expect(senderWallet.calculateBalance(bc)).toEqual(INITIAL_BALANCE - (addBalance * repeatAdd));
      });
 
+     describe('and the receipent a transaction ' , () => {
+       let subractBalance , recipentBalance;
+       beforeEach(() => {
+         tp.clear();
+         subractBalance =60;
+         recipentBalance = wallet.calculateBalance(bc);
+         wallet.createTransaction(senderWallet.publicKey, subractBalance,bc ,tp);
+         bc.addBlock(tp.transactions);
+
+
+       });
+       describe('and the receipent a transaction ' , () => {
+
+         beforeEach(() => {
+           tp.clear();
+           senderWallet.createTransaction(wallet.publicKey, addBalance,bc ,tp);
+           bc.addBlock(tp.transactions);
+
+
+         });
+
+         it('calculate the recipent balance ony using tranaction since it most recent transction itself',
+         () => {
+           expect(wallet.calculateBalance(bc)).toEqual(recipentBalance - subractBalance + addBalance );
+
+         });
+
+     });
+
+     });
+
  });
 
 
