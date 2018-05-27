@@ -20,5 +20,7 @@ Body <br/>
 <br/>
 Content Type :- Json
 <br/>
-(2) Get :- localhost:3002/transactions
+(2) Get :- localhost:3002/transactions<br/>
+
+Running Instance :- $ HTTP_PORT=3002 P2P_PORT=5002 PEERS=ws://localhost:5001 npm run dev <br/>
 
