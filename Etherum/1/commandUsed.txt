@@ -1,0 +1,41 @@
+PS C:\Users\avinash.t> $env:Path = "C:\Tools\Geth64";
+PS C:\Users\avinash.t> geth attach
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.7.3-stable-4bb3c89d/windows-amd64/go1.9
+coinbase: 0xcf01c4bbcfb818b7074124ee825fb859d8730486
+at block: 5 (Sun, 03 Jun 2018 13:46:41 MDT)
+ datadir: C:\Users\avinash.t\chainskills\private
+ modules: admin:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+
+> eth.accounts
+["0xcf01c4bbcfb818b7074124ee825fb859d8730486", "0x46b0438ef02422140102a475201498b37ef356ed", "0xa131e6ae5347
+888ded169b573dd5"]
+> eth.coinbase
+"0xcf01c4bbcfb818b7074124ee825fb859d8730486"
+> eth.getBalance(eth.coinbase)
+30000000000000000000
+> eth.getBalance(eth.accounts[1])
+0
+> eth.getBalance(eth.accounts[0])
+30000000000000000000
+> web3.fromWei(eth.getBalance(eth.coinbase),"ether")
+30
+> miner.stop()
+true
+> miner.start(1)
+null
+> net.version
+"4224"
+> eth.sendTransaction({from: eth.coinbase, to:eth.accounts[1], value:web3.toWei(10,"ether")})
+"0xfed3a22f4478bb1d77e8c68a7f5ef56b96e461b3b3194ce95a413f35feaa365f"
+> eth.getBalance(eth.accounts[1])
+10000000000000000000
+> eth.getBalance(eth.accounts[2])
+0
+> eth.sendTransaction({from: eth.coinbase, to:eth.accounts[2], value:web3.toWei(10,"ether")})
+"0x4a926044483c063cb645e483a969e8777babd96e436cf2c0317703ea9fbc39ee"
+> exit
+PS C:\Users\avinash.t> $env:Path = "C:\Tools\Geth64";$env:Path = "C:\Tools\Geth64";
+
+
