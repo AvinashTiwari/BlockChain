@@ -1,0 +1,40 @@
+=============== Jun 2, 2018 (MDT) ===============
+17:06:58.523285 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:06:58.670499 db@open opening
+17:06:58.885819 version@stat F·[] S·0B[] Sc·[]
+17:06:58.955919 db@janitor F·2 G·0
+17:06:58.956921 db@open done T·285.4206ms
+=============== Jun 2, 2018 (MDT) ===============
+17:12:30.029614 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:12:30.031617 version@stat F·[] S·0B[] Sc·[]
+17:12:30.031617 db@open opening
+17:12:30.031617 journal@recovery F·1
+17:12:30.103721 journal@recovery recovering @1
+17:12:30.218893 memdb@flush created L0@2 N·619 S·50KiB "\x02d\xfc..\x19Ba,v428":"\xfe\x88\xcf..H\xef\xcc,v361"
+17:12:30.301011 version@stat F·[1] S·50KiB[50KiB] Sc·[0.25]
+17:12:30.424194 db@janitor F·3 G·0
+17:12:30.425195 db@open done T·393.5777ms
+17:18:53.686439 db@close closing
+17:18:53.690445 db@close done T·4.0059ms
+=============== Jun 2, 2018 (MDT) ===============
+17:37:48.961725 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:37:48.963724 version@stat F·[1] S·50KiB[50KiB] Sc·[0.25]
+17:37:48.963724 db@open opening
+17:37:48.963724 journal@recovery F·1
+17:37:48.968732 journal@recovery recovering @3
+17:37:49.052858 memdb@flush created L0@5 N·3 S·290B "Blo..ion,v622":"dbU..ata,v621"
+17:37:49.065875 version@stat F·[2] S·50KiB[50KiB] Sc·[0.50]
+17:37:49.117952 db@janitor F·4 G·0
+17:37:49.117952 db@open done T·154.228ms
+=============== Jun 2, 2018 (MDT) ===============
+17:38:55.965026 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:38:55.967029 version@stat F·[2] S·50KiB[50KiB] Sc·[0.50]
+17:38:55.967029 db@open opening
+17:38:55.967029 journal@recovery F·1
+17:38:55.981051 journal@recovery recovering @6
+17:38:56.080194 memdb@flush created L0@8 N·2 S·243B "Blo..ion,v625":"Las..der,v626"
+17:38:56.086205 version@stat F·[3] S·50KiB[50KiB] Sc·[0.75]
+17:38:56.150327 db@janitor F·5 G·0
+17:38:56.151328 db@open done T·184.2989ms
+17:39:22.967801 db@close closing
+17:39:22.968806 db@close done T·1.0051ms
