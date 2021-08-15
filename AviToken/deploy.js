@@ -1,11 +1,11 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
-const web3 = require('web3');
+const Web3 = require('web3');
 const path = require('path');
 const fs = require('fs');
 const { exit } = require('process');
 
 const provider = new HDWalletProvider('write when local',
-    '');
+    'https://rinkeby.infura.io/v3/02af00bd0f2249a8908c3d1ef58c24ad');
 const web3 = new Web3(provider);
 const abiPath = path.resolve(__dirname, 'bin', 'AviToken.abi');
 const abi = fs.readFileSync(abiPath, 'utf8');
